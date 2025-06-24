@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 function ForgetPasswordPage() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="container m-auto">
       <div className="text-gray-400 text-base md:text-lg p-2 pl-4"></div>
       <div className="bg-white m-2 md:m-4 p-0 md:p-8 min-h-[80vh] flex flex-col justify-between">
         <header className="flex justify-between items-start pt-4 md:pt-6 px-4 md:px-8">
