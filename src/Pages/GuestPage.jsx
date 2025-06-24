@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import grooveLogo from "../assets/grovelogo.png";
+import grooveLogo from "../Home/grovelogo.png";
 function GuestPage() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <div className="text-gray-400 text-lg p-2 pl-4">guest page</div>
+      <div className="text-gray-400 text-lg p-2 pl-4"></div>
       <div className="bg-white m-4 min-h-[80vh] flex flex-col">
         <header className="flex justify-end gap-8 text-lg font-normal pt-8 pr-12">
           <Link to="/login" className="hover:underline">login</Link>
