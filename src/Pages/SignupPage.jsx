@@ -12,26 +12,30 @@ function SignupPage() {
         <main className="flex flex-1 flex-col items-center justify-center w-full">
           <h2 className="text-xl md:text-2xl font-normal mb-6 md:mb-8 mt-4">Signup as</h2>
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 mb-6 md:mb-8 w-full justify-center items-center px-4 md:px-0">
-            <button 
-              className="text-white text-lg md:text-2xl w-full md:w-72 h-16 md:h-32 rounded-none transition duration-200"
-              style={{ backgroundColor: '#CA4A4A' }}
-              onMouseOver={e => e.currentTarget.style.backgroundColor = '#B43E3E'}
-              onMouseOut={e => e.currentTarget.style.backgroundColor = '#CA4A4A'}
-            >
-              Service Provider
-            </button>
-            <button 
-              className="text-white text-lg md:text-2xl w-full md:w-72 h-16 md:h-32 rounded-none transition duration-200"
-              style={{ backgroundColor: '#CA4A4A' }}
-              onMouseOver={e => e.currentTarget.style.backgroundColor = '#B43E3E'}
-              onMouseOut={e => e.currentTarget.style.backgroundColor = '#CA4A4A'}
-            >
-              Customer
-            </button>
+            <Link to="/serviceprovider" className="w-full md:w-72">
+              <button
+                className="text-white text-lg md:text-2xl w-full h-16 md:h-32 rounded-none transition duration-200"
+                style={{ backgroundColor: '#CA4A4A' }}
+                onMouseOver={e => e.currentTarget.style.backgroundColor = '#B43E3E'}
+                onMouseOut={e => e.currentTarget.style.backgroundColor = '#CA4A4A'}
+              >
+                Service Provider
+              </button>
+            </Link>
+            <Link to="/customer" className="w-full md:w-72">
+              <button
+                className="text-white text-lg md:text-2xl w-full h-16 md:h-32 rounded-none transition duration-200"
+                style={{ backgroundColor: '#CA4A4A' }}
+                onMouseOver={e => e.currentTarget.style.backgroundColor = '#B43E3E'}
+                onMouseOut={e => e.currentTarget.style.backgroundColor = '#CA4A4A'}
+              >
+                Customer
+              </button>
+            </Link>
           </div>
         </main>
         <div className="text-black text-xs md:text-sm px-4 md:px-8 pb-4 text-center md:text-left">
-          note: we have 3 roles, service provider, customer and admin<br/>
+          note: we have 3 roles, service provider, customer and admin<br />
           (with all access and just a single account with defined creds)
         </div>
       </div>
